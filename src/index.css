@@ -133,3 +133,7 @@ p {
     width: 95vw;
   }
 }
+
+.layout_padding {
+  padding: 90px 0;
+}

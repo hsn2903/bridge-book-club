@@ -3,7 +3,7 @@ import heroImg from "../../assets/img/hero-img.png";
 
 const Hero = () => {
   return (
-    <section className="hero_section">
+    <section className="hero_section layout_padding">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -14,10 +14,11 @@ const Hero = () => {
                 For Book Lovers
               </h1>
               <p>
-                We are meeting on Saturday at 20:00 UTC+3 for discussing books.
-                If you want to want more informationi please contact with us.
+                We are meeting <strong>on Saturday at 20:00 UTC+3</strong> for
+                discussing books. If you want to want more informationi please
+                contact with us.
               </p>
-              <a href=""> Contact Us</a>
+              <a href="#contact_section"> Contact Us</a>
             </div>
           </div>
           <div className="col-md-6">

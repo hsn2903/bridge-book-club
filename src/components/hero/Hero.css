@@ -1,7 +1,6 @@
 .hero_section {
   display: flex;
   align-items: center;
-  margin-top: 3rem;
 }
 
 .hero_section .detail-box h5 {
