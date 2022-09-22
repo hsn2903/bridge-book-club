@@ -24,6 +24,7 @@ const Navbar = () => {
               <NavLink
                 to="home"
                 className={({ isActive }) => (isActive ? "active-nav" : "")}
+                onClick={toggleLinks}
               >
                 Home
               </NavLink>
@@ -32,6 +33,7 @@ const Navbar = () => {
               <NavLink
                 to="about"
                 className={({ isActive }) => (isActive ? "active-nav" : "")}
+                onClick={toggleLinks}
               >
                 About
               </NavLink>
@@ -40,6 +42,7 @@ const Navbar = () => {
               <NavLink
                 to="blog"
                 className={({ isActive }) => (isActive ? "active-nav" : "")}
+                onClick={toggleLinks}
               >
                 Blog
               </NavLink>
@@ -48,6 +51,7 @@ const Navbar = () => {
               <NavLink
                 to="purpose"
                 className={({ isActive }) => (isActive ? "active-nav" : "")}
+                onClick={toggleLinks}
               >
                 Purpose & Rules
               </NavLink>
