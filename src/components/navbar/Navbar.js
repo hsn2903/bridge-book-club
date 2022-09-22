@@ -1,59 +1,62 @@
-import React, { useState, useRef, useEffect } from "react";
-import { FaBars } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link, NavLink } from "react-router-dom";
 
 import "./Navbar.css";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
-  // const linksContainerRef = useRef(null);
-  // const linksRef = useRef(null);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
 
-  // useEffect(() => {
-  //   const linksHeight = linksRef.current.getBoundingClientRect().height;
-  //   if (showLinks) {
-  //     linksContainerRef.current.style.height = `${linksHeight}px`;
-  //   } else {
-  //     linksContainerRef.current.style.height = "0px";
-  //   }
-  // }, [showLinks]);
-
   return (
     <div className="nav_section">
       <nav>
-        <div className="nav-center">
-          <div className="nav-header">
-            <a class="nav-brand" href="index.html">
-              <span> Bridge Book Club </span>
-            </a>
+        <div className="container nav__container">
+          <Link to="/" className="nav__brand">
+            <span> Bridge Book Club </span>
+          </Link>
 
-            <button className="nav-toggle" onClick={toggleLinks}>
-              <FaBars />
-            </button>
-          </div>
-          <div
-            className={`${
-              showLinks ? "links-container show-container" : "links-container"
-            }`}
-          >
-            <ul className="links">
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">About</a>
-              </li>
-              <li>
-                <a href="">Blog</a>
-              </li>
-              <li>
-                <a href="">Purpose & Rules</a>
-              </li>
-            </ul>
-          </div>
+          <ul className={`nav__links ${showLinks ? "show__nav" : "hide__nav"}`}>
+            <li>
+              <NavLink
+                to="home"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="about"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="blog"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                Blog
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="purpose"
+                className={({ isActive }) => (isActive ? "active-nav" : "")}
+              >
+                Purpose & Rules
+              </NavLink>
+            </li>
+          </ul>
+
+          <button className="nav__toggle-btn" onClick={toggleLinks}>
+            {!showLinks ? <FaBars /> : <FaTimes />}
+          </button>
         </div>
       </nav>
     </div>
