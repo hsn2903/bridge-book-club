@@ -1,12 +1,15 @@
-.contact_section h2 {
-  margin-bottom: 45px;
+.cta_section {
+  padding: 9.6rem 0;
+  background-color: #fff;
 }
 
 .contact_section form {
   padding-right: 35px;
 }
 
-.contact_section input {
+.cta_section input {
+  font-size: 1.8rem;
+
   width: 100%;
   border: 0;
   height: 50px;
@@ -18,35 +21,23 @@
   background: #f1f1f1;
 }
 
-.contact_section input::-webkit-input-placeholder {
-  color: #131313;
+.cta_section input::placeholder {
+  color: #797979;
 }
 
-.contact_section input:-ms-input-placeholder {
-  color: #131313;
-}
-
-.contact_section input::-ms-input-placeholder {
-  color: #131313;
-}
-
-.contact_section input::placeholder {
-  color: #131313;
-}
-
-.contact_section input.message-box {
+.cta_section input.message-box {
   height: 120px;
   border-radius: 15px;
 }
 
-.contact_section .btn-box {
+.cta_section .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
 }
 
-.contact_section button {
+.cta_section button {
   display: inline-block;
   padding: 12px 45px;
   background-color: #44b89d;
@@ -56,13 +47,14 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 100%;
+  font-size: 1.8rem;
 }
 
-.contact_section button:hover {
+.cta_section button:hover {
   background-color: transparent;
   color: #44b89d;
 }
 
-.contact_section .img-box img {
+.cta_section .img-box img {
   width: 100%;
 }

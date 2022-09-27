@@ -3,16 +3,12 @@ import contactImg from "../../assets/img/contact-img.png";
 
 const Contact = () => {
   return (
-    <section
-      id="contact_section"
-      className="contact_section layout_padding bg-light"
-    >
+    <section id="cta_section" className="cta_section">
       <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="heading_container">
-              <h2 className="">Contact Us</h2>
-            </div>
+        <div className="cta grid grid--2-cols">
+          <div className="text-box">
+            <h2 className="heading-secondary">Contact Us</h2>
+
             <form action="#">
               <div>
                 <input type="text" placeholder="Name" />
@@ -21,7 +17,7 @@ const Contact = () => {
                 <input type="email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" placeholder="Pone Number" />
+                <input type="text" placeholder="Phone Number" />
               </div>
               <div>
                 <input
@@ -35,10 +31,8 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="col-md-6">
-            <div className="img-box">
-              <img src={contactImg} alt="books" />
-            </div>
+          <div className="img-box">
+            <img src={contactImg} alt="books" />
           </div>
         </div>
       </div>
