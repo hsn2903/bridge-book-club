@@ -1,17 +1,18 @@
 import Navbar from "./components/navbar/Navbar";
-import { About, Home } from "./pages";
-import Purpose from "./pages/Purpose";
+import { About, Blog, Home, Purpose, SharedLayout } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
-
         <Routes>
-          <Route path="home" element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="purpose" element={<Purpose />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

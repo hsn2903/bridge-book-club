@@ -1,0 +1,17 @@
+.section_current-book {
+  padding: 9.6rem;
+}
+
+.section_current-book .text-box {
+  font-size: 2rem;
+  line-height: 1.8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_current-book .img-box img {
+  width: 75%;
+}
