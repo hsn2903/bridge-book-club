@@ -1,36 +1,25 @@
-.hero_section {
+.section_hero {
   display: flex;
+  align-items: center;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
   align-items: center;
 }
 
-.hero_section .detail-box h5 {
-  color: #44b89d;
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
 }
 
-.hero_section .detail-box h1 {
-  font-weight: bold;
-  margin-bottom: 25px;
-  line-height: 58px;
-  font-size: 3rem;
-}
-
-.hero_section .detail-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #44b89d;
-  color: #ffffff;
-  border-radius: 45px;
-  border: 1px solid #44b89d;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  margin-top: 15px;
-}
-
-.hero_section .detail-box a:hover {
-  background-color: transparent;
-  color: #44b89d;
-}
-
-.hero_section .img-box img {
+.hero-img {
   width: 100%;
 }
