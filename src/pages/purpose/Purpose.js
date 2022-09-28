@@ -15,7 +15,7 @@ const Purpose = () => {
   return (
     <div className="section_purpose">
       <div class="container">
-        <h2 className="heading-secondary center-text">Purpose & Rules</h2>
+        <h2 className="purpose-heading center-text">Purpose & Rules</h2>
         <p className="center-text">
           In order to keep everthing working, we need some rules and system.
           These are our rules.
@@ -66,7 +66,7 @@ const Purpose = () => {
         </div>
       </div>
       <div className="container">
-        <h2 className="heading-secondary center-text">Our Sytem</h2>
+        <h2 className="purpose-heading center-text">Our Sytem</h2>
         <div className="purpose-list">
           <div className="purpose">
             <div className="icon-box">

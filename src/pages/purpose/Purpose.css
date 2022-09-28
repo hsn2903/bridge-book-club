@@ -3,6 +3,12 @@
   font-size: 1.8rem;
 }
 
+.purpose-heading {
+  color: #3f6212;
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
 .purpose-list {
   padding: 4.8rem 0;
   display: flex;
