@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <section class="section_blog">
       <div class="container">
-        <h2 className="heading-primary">From Our Blog</h2>
+        <h2 className="heading-tertiary center-text">From Our Blog</h2>
 
         <div class="row">
           <div class="col-md-6">
@@ -28,12 +28,12 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          {/* <div class="col-md-6">
+          <div class="col-md-6">
             <div class="box">
               <div class="img-box">
                 <img src={b2} alt="" />
                 <h4 class="blog_date">
-                  <span>19 January 2021</span>
+                  <span>22 September 2022</span>
                 </h4>
               </div>
               <div class="detail-box">
@@ -41,13 +41,12 @@ const Blog = () => {
                 <p>
                   Officiis veritatis id illo eligendi repellat facilis animi
                   adipisci praesentium. Tempore ab provident porro illo ex
-                  obcaecati deleniti enim sequi voluptas at. Harum veniam eos
-                  nisi distinctio! Porro, reiciendis eius.
+                  obcaecati deleniti enim sequi voluptas at.
                 </p>
                 <a href="">Read More</a>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

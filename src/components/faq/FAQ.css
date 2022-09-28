@@ -1,0 +1,19 @@
+.faq_section {
+  padding: 9.6rem 0;
+}
+
+.faq_section .row {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  color: #b9b9b9;
+}
+
+.faq_section .row p {
+  font-size: 2rem;
+  /* font-weight: bold; */
+  padding-bottom: 0;
+}

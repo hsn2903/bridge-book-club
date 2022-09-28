@@ -14,8 +14,8 @@ const About = () => {
           </div>
           <div class="col-md-6">
             <div class="detail-box">
-              <div class="heading_container">
-                <h2 className="subheading">About Our Group</h2>
+              <div class="heading-container">
+                <h2>About Our Group</h2>
               </div>
               <p>
                 We are a group of book lovers who aim to not only read but also

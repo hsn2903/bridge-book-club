@@ -16,24 +16,6 @@
 
 .about_section .detail-box p {
   margin-top: 15px;
-  font-size: 1.6em;
+  font-size: 1.8em;
   line-height: 1.8;
-}
-
-.about_section .detail-box a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #44b89d;
-  color: #ffffff;
-  border-radius: 45px;
-  border: 1px solid #44b89d;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  margin-top: 15px;
-  font-size: 1.6rem;
-}
-
-.about_section .detail-box a:hover {
-  background-color: transparent;
-  color: #44b89d;
 }
