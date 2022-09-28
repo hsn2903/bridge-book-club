@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
 
 import "./Navbar.css";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
 
   return (
-    <header className="section_nav">
+    <header className={`${isNavOpen ? "section_nav nav-open" : "section_nav"}`}>
       <Link to="/" className="logo">
         <span> Bridge Book Club </span>
       </Link>
@@ -22,18 +23,13 @@ const Navbar = () => {
           className={`main-nav-list ${showLinks ? "show__nav" : "hide__nav"}`}
         >
           <li>
-            <a href="#how" className="main-nav-link">
-              How it works
-            </a>
-            {/* <NavLink
-              to="#how"
-              className={({ isActive }) =>
-                isActive ? "main-nav-link active-nav" : "main-nav-link"
-              }
-              onClick={toggleLinks}
+            <NavLink
+              to="/"
+              className="main-nav-link"
+              onClick={() => setIsNavOpen(!isNavOpen)}
             >
-              How it works
-            </NavLink> */}
+              Home
+            </NavLink>
           </li>
           <li>
             <NavLink
@@ -41,7 +37,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? "main-nav-link active-nav" : "main-nav-link"
               }
-              onClick={toggleLinks}
+              onClick={() => setIsNavOpen(!isNavOpen)}
             >
               About
             </NavLink>
@@ -52,7 +48,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? "main-nav-link active-nav" : "main-nav-link"
               }
-              onClick={toggleLinks}
+              onClick={() => setIsNavOpen(!isNavOpen)}
             >
               Blog
             </NavLink>
@@ -63,31 +59,20 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? "main-nav-link active-nav" : "main-nav-link"
               }
-              onClick={toggleLinks}
-            >
-              Purpose & Rules
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="contact"
-              className={({ isActive }) =>
-                isActive
-                  ? "main-nav-link nav-cta active-nav"
-                  : "main-nav-link nav-cta"
-              }
-              onClick={toggleLinks}
+              onClick={() => setIsNavOpen(!isNavOpen)}
             >
               Purpose & Rules
             </NavLink>
           </li>
         </ul>
-
-        <button className="nav__toggle-btn" onClick={toggleLinks}>
-          {!showLinks ? <FaBars /> : <FaTimes />}
-        </button>
       </nav>
+      <button
+        className="btn-mobile-nav"
+        onClick={() => setIsNavOpen(!isNavOpen)}
+      >
+        <IoMenuOutline className="icon-mobile-nav" name="menu-outline" />
+        <IoCloseOutline className="icon-mobile-nav" name="close-outline" />
+      </button>
     </header>
   );
 };
