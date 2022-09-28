@@ -3,22 +3,27 @@
 Navbar
 ===============
 */
-.section_nav {
+.header_section {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   background-color: var(--clr-grey-10);
-  box-shadow: var(--light-shadow);
+  /* box-shadow: var(--light-shadow); */
   height: 9.6rem;
   padding: 0 4.8rem;
 }
 
-.section_nav .logo {
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  color: #000000;
   font-size: 2.4rem;
   font-weight: bold;
+}
+
+.navbar-brand span {
   color: #14532d;
-  text-decoration: none;
 }
 
 .main-nav-list {
@@ -94,7 +99,7 @@ Navbar
 /* Below 1200px (Landscape Tabltes) */
 /* ************************ */
 @media (max-width: 75em) {
-  .section_nav {
+  .header_section {
     padding: 0 3.2rem;
   }
 

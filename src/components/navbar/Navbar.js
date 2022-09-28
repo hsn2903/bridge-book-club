@@ -13,8 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`${isNavOpen ? "section_nav nav-open" : "section_nav"}`}>
-      <Link to="/" className="logo">
+    <header
+      className={`${isNavOpen ? "header_section nav-open" : "header_section"}`}
+    >
+      <Link to="/" className="navbar-brand">
         <span> Bridge Book Club </span>
       </Link>
 
@@ -66,6 +68,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+
       <button
         className="btn-mobile-nav"
         onClick={() => setIsNavOpen(!isNavOpen)}

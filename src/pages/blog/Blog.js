@@ -1,14 +1,14 @@
+import { Link } from "react-router-dom";
 import "./Blog.css";
 import b1 from "../../assets/img/b1.jpg";
 import b2 from "../../assets/img/b2.jpg";
 
 const Blog = () => {
   return (
-    <section class="blog_section layout_padding">
+    <section class="section_blog">
       <div class="container">
-        <div class="heading_container heading_center">
-          <h2>From Our Blog</h2>
-        </div>
+        <h2 className="heading-primary">From Our Blog</h2>
+
         <div class="row">
           <div class="col-md-6">
             <div class="box">
@@ -19,20 +19,16 @@ const Blog = () => {
                 </h4>
               </div>
               <div class="detail-box">
-                <h5>Tiny Changes, Remarkable Results</h5>
+                <h5>Qestions for Week 1</h5>
                 <p>
-                  No matter your goals, Atomic Habits offers a proven framework
-                  for improving--every day. James Clear, one of the world's
-                  leading experts on habit formation, reveals practical
-                  strategies that will teach you exactly how to form good
-                  habits, break bad ones, and master the tiny behaviors that
-                  lead to remarkable results.
+                  We discussed second chapter of Atomic Habits by James Clear on
+                  our weekly meetings. Here are the questions we discussed.
                 </p>
-                <a href="">Read More</a>
+                <Link to="/blog/single-blog">Read More</Link>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          {/* <div class="col-md-6">
             <div class="box">
               <div class="img-box">
                 <img src={b2} alt="" />
@@ -51,7 +47,7 @@ const Blog = () => {
                 <a href="">Read More</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
