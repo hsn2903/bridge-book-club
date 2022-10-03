@@ -327,3 +327,35 @@ strong {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
+
+/* QUERIES */
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}

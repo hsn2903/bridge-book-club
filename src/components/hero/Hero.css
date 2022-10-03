@@ -23,3 +23,15 @@
 .hero-img {
   width: 100%;
 }
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}

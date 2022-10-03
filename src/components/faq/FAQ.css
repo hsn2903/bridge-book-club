@@ -17,3 +17,15 @@
   /* font-weight: bold; */
   padding-bottom: 0;
 }
+
+.question {
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 11px;
+}
+
+.accordion-btn {
+  background: transparent;
+  border: none;
+}
