@@ -9,7 +9,7 @@ const CurrentBook = () => {
         <h2 className="heading-secondary">The book we are reading now</h2>
       </div>
       <div class="container">
-        <div className="current-book grid grid--2-cols">
+        <div className="current-book">
           <div className="img-box">
             <img src={bookCover} alt="atomic habits cover" />
           </div>
@@ -21,7 +21,7 @@ const CurrentBook = () => {
               themselves again and again not because you don't want to change,
               but because you have the wrong system for change.
             </p>
-            <a href=""> Read More </a>
+            {/* <a href=""> Read More </a> */}
           </div>
         </div>
       </div>

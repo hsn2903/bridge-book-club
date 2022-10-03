@@ -8,8 +8,9 @@ const Hero = () => {
         <div className="hero-text-box">
           <span className="subheading">Bridge Book Club</span>
           <h1 className="heading-primary">
-            Book Club <br />
-            For English Learners
+            Book Club For
+            <br />
+            English Learners
           </h1>
           <p className="hero-description">
             We meet <strong>on Saturday at 20:00 UTC+3</strong> for discussing

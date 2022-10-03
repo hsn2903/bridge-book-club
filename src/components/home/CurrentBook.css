@@ -1,5 +1,10 @@
 .section_current-book {
-  padding: 9.6rem;
+  padding: 9.6rem 0;
+}
+
+.current-book {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .section_current-book .text-box {
@@ -14,4 +19,29 @@
 
 .section_current-book .img-box img {
   width: 75%;
+}
+
+@media (max-width: 64em) {
+  .current-book {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section_current-book .img-box img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 64em) {
+  .current-book {
+    grid-template-columns: 1fr;
+  }
+
+  .section_current-book .img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section_current-book .img-box img {
+    width: 30%;
+  }
 }
